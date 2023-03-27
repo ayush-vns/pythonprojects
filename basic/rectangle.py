@@ -1,0 +1,6 @@
+L = int(input("L="))
+B = int(input("B="))
+H = int(input("B="))
+R = (L * B * H)
+print("L", L, "B", B, "H", H, )
+print("area of rectangle ", R)
