@@ -6,11 +6,11 @@ elif monthno == 4 or monthno == 6 or monthno == 9 or monthno == 11:
 elif monthno == 2:
     year = int(input("enter year\n"))
     if year % 400 == 0:
-        days = ("Leap Year = 29days")
+        days = ("Leap Year = 29 days")
     elif year % 4 == 0 and year % 100 != 0:
-        days = ("Leap Year = 29days")
+        days = ("Leap Year = 29 days")
     elif year:
-        days = ("not leap year = 28days")
+        days = ("not leap year = days 28 ")
 else:
     days = "Invalid month no "
 print(days)

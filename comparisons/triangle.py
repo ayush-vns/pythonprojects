@@ -1,4 +1,4 @@
-a,b,c=3,3,3
+a,b,c=7,4,5
 print(a,b,c)
 if a==b==c:
     print("Equilateral")
