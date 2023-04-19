@@ -8,6 +8,9 @@ while True:
         print("add")
         name = input("Enter your name  ")
         account_no = int(input(" Enter your account_no "))
+        if data.get(account_no) is not None:
+            print("already have a account ")
+            continue
         deposit = int(input("deposit money "))
         data[account_no] = {"name": name, "balance": deposit}
         continue
@@ -30,6 +33,9 @@ while True:
             print("Invalid Account No")
             continue
         deposit = int(input("Enter deposit money "))
+        if data.get(deposit == -1 or deposit == 0) is None:
+            print("invalid ")
+            continue
         balance = data[account_no]["balance"]
         new_balance = balance + deposit
         data[account_no]["balance"] = new_balance
@@ -45,8 +51,3 @@ while True:
     new_balance = balance - withdrawal
     data[account_no]["balance"] = new_balance
     continue
-
-
-
-
-
