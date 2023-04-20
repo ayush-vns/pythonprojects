@@ -33,8 +33,8 @@ while True:
             print("Invalid Account No")
             continue
         deposit = int(input("Enter deposit money "))
-        if data.get(deposit == -1 or deposit == 0) is None:
-            print("invalid ")
+        if deposit <= 0:
+            print("Invalid amount")
             continue
         balance = data[account_no]["balance"]
         new_balance = balance + deposit
