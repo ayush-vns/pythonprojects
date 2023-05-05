@@ -18,8 +18,6 @@ while True:
     if answer == question["answer"]:
         print("Right")
         score += 1
-
-
     else:
         print("Wrong")
     qno += 1
